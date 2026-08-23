@@ -1,49 +1,52 @@
-MUHAMMAD SAAD JADOON PORTFOLIO - STRICT V2 REFERENCE BUILD
+# Muhammad Saad Jadoon | Personal Portfolio
 
-This build uses the uploaded V2 Stable 100% portfolio as the canonical frontend reference.
-The visual design is preserved; only the explicitly requested text/placement changes were applied.
+Welcome to my personal portfolio repository.
 
-REQUESTED UPDATES
-- Top brand: Muhammad Saad Jadoon
-- Hero name: Hi, I'm Muhammad Saad / Jadoon on next line
-- Navbar text slightly larger
-- Profile badges refined and kept around the profile card
-- Social Trend Network experience retained
-- EduNova AI retained with its project artwork
-- Full project structure with separate CSS and JS
-- Real Netlify Forms backend for contact submissions
-- Real Netlify serverless status endpoint
+This portfolio is a reflection of my academic journey, technical growth, professional experience, achievements, and work across Artificial Intelligence, Machine Learning, Generative AI, and modern software development.
 
-LOCAL PREVIEW
-1. Open this folder in VS Code.
-2. Right-click index.html.
-3. Choose Open with Live Server.
+## 🌐 Live Portfolio
 
-NETLIFY DEPLOYMENT
-Upload the COMPLETE folder to Netlify, not only index.html.
-Netlify Forms and Functions become active after deployment.
+Explore the complete portfolio:
 
+**[Visit My Portfolio](muhammadsaadjadoon.netlify.app)**
 
-LATEST CORRECTIONS
-- About stats now show exactly four items: 4 Internships, 11+ Projects, 2 Professional Roles, National Awardee.
-- CGPA and Technologies & Tools stat cards were removed.
-- Social Trend Network is shown separately as the current role.
-- The Lead Digital Consultant / Marketing Specialist / WordPress Developer experience is correctly assigned to be RYZEL.
-- National Awardee typography was reduced and balanced to match the reference-style statistic cards.
+## ✨ About the Portfolio
 
+The website is designed to provide a clear and professional overview of my profile, including:
 
-NATIONAL RECOGNITION UPDATE
-- Added a dedicated National Recognition section using the user's actual ceremony photo.
-- Prime Minister's Youth Laptop Award.
-- Date: 17 December 2025.
-- Award received during the fourth semester.
-- Selected among four students across the University of Haripur.
-- CGPA at selection: 4.0.
-- User-provided detail: only student from his department among the four selected students.
+- Professional introduction
+- Technical skills and expertise
+- Selected projects and practical work
+- Internship and professional experience
+- Education and academic journey
+- Awards and achievements
+- Certifications
+- Professional contact information
 
+## 💻 Built With
 
-PROFESSIONAL SOCIAL LINKS
-- Instagram removed.
-- Facebook removed.
-- Hero CONNECT: GitHub, LinkedIn, Email.
-- WhatsApp retained only as a secondary option in Contact and Footer.
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Web Design
+- Netlify
+
+The portfolio is fully responsive and optimized for desktop, laptop, tablet, and mobile devices.
+
+## 🎯 Purpose
+
+The goal of this portfolio is to bring my work, experience, skills, and accomplishments together in one place while providing recruiters, collaborators, and professionals with an easy way to explore my technical journey.
+
+## 🤝 Connect With Me
+
+**LinkedIn**  
+[linkedin.com/in/muhammad-saad-jadoon](https://www.linkedin.com/in/muhammad-saad-jadoon/)
+
+**GitHub**  
+[github.com/muhammadsaadjadoon](https://github.com/muhammadsaadjadoon)
+
+---
+
+### Thank you for visiting!
+
+Feel free to explore the portfolio and connect with me for professional opportunities, collaborations, and meaningful projects.
