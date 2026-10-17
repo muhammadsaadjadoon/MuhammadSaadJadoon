@@ -1,0 +1,29 @@
+/* Additive styling scoped to the mobile project extension; original stylesheet unchanged. */
+.internship-project-link{margin-top:16px;max-width:100%;flex-wrap:wrap;line-height:1.6}
+.mobile-internship-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:24px}
+.mobile-internship-meta span{border:1px solid var(--border);border-radius:999px;padding:8px 13px;font-size:11px;color:var(--muted)}
+.mobile-library-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.mobile-library-grid .project-card{min-width:0;max-width:none}
+.mobile-library .project-thumb{aspect-ratio:16/9;height:auto}
+.mobile-library .project-thumb img{object-fit:contain}
+.mobile-support-heading{margin:58px 0 24px}
+.mobile-support-heading h2,.mobile-case-study h2{font-size:26px;line-height:1.3;color:var(--white);margin:0 0 12px;letter-spacing:-.02em}
+.mobile-support-heading p,.mobile-case-study p{color:var(--muted);font-size:13px;line-height:1.85;margin:0 0 20px}
+.mobile-support-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.mobile-support-card{min-width:0;border:1px solid var(--border);background:var(--card);border-radius:13px;padding:26px;display:flex;flex-direction:column}
+.mobile-support-card>i{font-size:25px;color:var(--lav);margin-bottom:17px}
+.mobile-support-card h3{font-size:18px;line-height:1.4;margin:0 0 12px}
+.mobile-support-card p{font-size:13px;line-height:1.8;color:var(--muted);margin:0 0 24px}
+.mobile-support-card .card-link{margin-top:auto}
+.mobile-case-study{margin-top:58px;padding:32px;border:1px solid var(--border);border-radius:14px;background:var(--card);scroll-margin-top:105px}
+.mobile-workflow{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0}
+.mobile-workflow span{border:1px solid var(--border);border-radius:8px;padding:11px 14px;font-size:11px;line-height:1.5}
+.mobile-source-note{display:flex;gap:12px;padding:16px;border:1px solid var(--border);border-radius:9px;margin:24px 0}
+.mobile-source-note i{margin-top:5px;flex-shrink:0;color:var(--lav)}
+.mobile-source-note p{margin:0;font-size:12px}
+.mobile-screen-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;max-width:800px;margin:30px auto 0}
+.mobile-screen-gallery figure{margin:0;min-width:0}
+.mobile-screen-gallery img{width:100%;height:auto;border:1px solid var(--border);border-radius:12px}
+.mobile-screen-gallery figcaption{font-size:11px;text-align:center;color:var(--muted);margin-top:12px;line-height:1.6}
+@media(max-width:980px){.mobile-library-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mobile-support-grid{grid-template-columns:1fr}.mobile-library-grid .project-card:last-child{grid-column:1/-1;max-width:600px;justify-self:center}.mobile-library-grid .project-card:last-child .project-title h3 span{display:inline;margin-right:.25em}}
+@media(max-width:650px){.mobile-library-grid{grid-template-columns:1fr}.mobile-library-grid .project-card:last-child{grid-column:auto;max-width:none}.mobile-case-study{padding:20px}.mobile-case-study h2,.mobile-support-heading h2{font-size:22px}.mobile-screen-gallery{grid-template-columns:1fr;max-width:280px;gap:28px}.mobile-internship-meta span{font-size:10px}.mobile-workflow{display:grid;grid-template-columns:1fr}.mobile-source-note{padding:12px}.mobile-support-card{padding:22px}}

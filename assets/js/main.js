@@ -33,9 +33,7 @@ if('IntersectionObserver' in window){
   const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{threshold:.07});
   document.querySelectorAll('.reveal').forEach(e=>ro.observe(e));
 
-  const secs=[...document.querySelectorAll('main section[id]')],links=[...document.querySelectorAll('.nav-links a')];
-  const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-35% 0px -55%',threshold:.01});
-  secs.forEach(s=>so.observe(s));
+
 }else{
   document.querySelectorAll('.reveal').forEach(e=>e.classList.add('in'));
 }
@@ -44,3 +42,55 @@ const topBtn=document.querySelector('.to-top');
 if(topBtn){
   addEventListener('scroll',()=>topBtn.classList.toggle('show',scrollY>500),{passive:true});
 }
+
+// Keep the active navigation underline aligned with the section in view.
+(function setupSectionNavigation(){
+  const header=document.querySelector('.navbar');
+  const links=[...document.querySelectorAll('.nav-links a')];
+  const sections=links.map(link=>{
+    const href=link.getAttribute('href')||'';
+    if(!href.startsWith('#'))return null;
+    const section=document.getElementById(href.slice(1));
+    return section?{link,section}:null;
+  }).filter(Boolean);
+  function activate(selected){
+    links.forEach(link=>{
+      const active=link===selected;
+      link.classList.toggle('active',active);
+      if(active)link.setAttribute('aria-current','location');
+      else link.removeAttribute('aria-current');
+    });
+  }
+  if(!sections.length){
+    const projects=links.find(link=>(link.getAttribute('href')||'').endsWith('#projects'));
+    if(projects)activate(projects);
+    return;
+  }
+  let queued=false;
+  function update(){
+    queued=false;
+    const headerHeight=header?header.getBoundingClientRect().height:0;
+    const marker=headerHeight+Math.min(100,window.innerHeight*0.15);
+    let current=sections[0];
+    for(const entry of sections){
+      if(entry.section.getBoundingClientRect().top<=marker)current=entry;
+    }
+    if(window.scrollY+window.innerHeight>=document.documentElement.scrollHeight-2){
+      current=sections[sections.length-1];
+    }
+    activate(current.link);
+  }
+  function schedule(){
+    if(!queued){queued=true;window.requestAnimationFrame(update);}
+  }
+  window.addEventListener('scroll',schedule,{passive:true});
+  window.addEventListener('resize',schedule,{passive:true});
+  window.addEventListener('hashchange',schedule);
+  window.addEventListener('load',schedule);
+  if('ResizeObserver' in window){
+    const observer=new ResizeObserver(schedule);
+    if(header)observer.observe(header);
+    sections.forEach(entry=>observer.observe(entry.section));
+  }
+  update();
+})();

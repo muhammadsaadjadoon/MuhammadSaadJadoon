@@ -1613,3 +1613,12 @@ button{touch-action:manipulation}
   .profile-name{font-size:17px}
   .profile-role{font-size:10.8px}
 }
+
+/* Persistent header: retains the original header height and page spacing. */
+:root{--portfolio-header-height:83px}
+body{padding-top:var(--portfolio-header-height)}
+.navbar{position:fixed;top:0;left:0;right:0;width:100%;z-index:1000}
+html{scroll-padding-top:var(--portfolio-header-height)}
+@media(max-width:980px){:root{--portfolio-header-height:76px}}
+@media(max-width:650px){:root{--portfolio-header-height:68px}}
+@media(max-width:980px){.nav-links a.active:after{display:block}}
