@@ -1,8 +1,8 @@
 # Hi, I'm Muhammad Saad Jadoon 👋
 
-**AI Student at UOH | AI Engineer | Generative AI & ML | Flutter App Developer | AI & Full-Stack Web Developer | Firebase**
+**AI Student at UOH | AI & ML Engineer | Generative AI Developer | Flutter App Developer | Full-Stack Web Developer**
 
-I'm an AI Engineer and AI student at the University of Haripur, building intelligent applications with Generative AI and machine learning for mobile and web. I turn real-world problems into production-style apps — from AI-powered learning and resume tools to full Flutter + Firebase products.
+I'm an AI Engineer and AI student at the University of Haripur, building intelligent applications with Generative AI and machine learning for mobile and web. I turn real-world problems into production-style apps, from AI-powered learning and resume tools to full Flutter + Firebase products.
 
 ## 🛠️ Skills
 
