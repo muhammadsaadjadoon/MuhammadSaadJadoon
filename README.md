@@ -27,6 +27,7 @@ I'm an AI Engineer and AI student at the University of Haripur, building intelli
 - **Machine Learning Intern** — CodeAlpha
 - **Generative AI Intern** — DecodeLabs
 - **Flutter Intern** — Internee.pk
+- **Networking Intern** — Telephone Industries of Pakistan
 
 ## 📫 Connect with me
 
