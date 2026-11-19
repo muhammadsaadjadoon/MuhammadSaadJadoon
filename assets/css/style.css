@@ -1622,3 +1622,36 @@ html{scroll-padding-top:var(--portfolio-header-height)}
 @media(max-width:980px){:root{--portfolio-header-height:76px}}
 @media(max-width:650px){:root{--portfolio-header-height:68px}}
 @media(max-width:980px){.nav-links a.active:after{display:block}}
+
+
+/* Portfolio Nov 2026: portrait treatment and project consistency */
+.profile-card--editorial{width:min(388px,100%);margin-right:26px;padding:16px 16px 19px}
+.profile-card--editorial .portrait-stage{height:430px;border-radius:22px;display:block;padding:8px;overflow:hidden}
+.profile-card--editorial .portrait-stage::before,.profile-card--editorial .portrait-stage::after{opacity:.14}
+.profile-card--editorial .portrait-ring{width:100%;height:100%;border-radius:16px;border:1px solid rgba(216,231,255,.32);box-shadow:0 13px 35px rgba(0,0,0,.22);background:none}
+.profile-card--editorial .portrait-ring::before{display:none}
+.profile-card--editorial .portrait-ring img{width:100%;height:100%;object-fit:cover;object-position:50% 36%;display:block}
+.profile-card--editorial .profile-role{font-size:10px;letter-spacing:.04em}
+.project-grid .project-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.project-grid .project-thumb{overflow:hidden}
+.project-card .card-link-muted{opacity:.78;cursor:default;text-decoration:none}
+@media(max-width:1180px){.profile-card--editorial{width:min(352px,100%);margin-right:0}.profile-card--editorial .portrait-stage{height:398px}}
+@media(max-width:980px){.profile-card--editorial{margin-left:auto;margin-right:auto}}
+@media(max-width:650px){.profile-card--editorial{width:min(310px,calc(100vw - 45px));padding:12px}.profile-card--editorial .portrait-stage{height:346px;padding:7px}.profile-card--editorial .float-pill.left{left:-38px;top:63px}.profile-card--editorial .float-pill.right{right:-35px;bottom:79px}}
+
+
+/* Final alignment and artwork balance: November 2026 */
+@media(min-width:981px){
+  .home-grid{align-items:start;}
+  .home .profile-card.profile-card--editorial{margin-top:-23px;margin-right:20px;}
+  .home-copy>p{max-width:680px;line-height:1.92;}
+}
+@media(min-width:981px) and (max-width:1180px){
+  .home .profile-card.profile-card--editorial{margin-top:-8px;margin-right:0;}
+}
+@media(max-width:980px){
+  .home .profile-card.profile-card--editorial{margin-top:0;}
+}
+/* Light, uniform photographic treatment, with distinct accents inside each cover. */
+#projects .project-thumb img{filter:brightness(.97) contrast(1.035) saturate(.91);}
+#projects .project-thumb{background:#15253a;}
