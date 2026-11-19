@@ -6,10 +6,10 @@ I'm an AI Engineer and AI student at the University of Haripur, building intelli
 
 ## 🛠️ Skills
 
-- **AI/ML & Generative AI** — intelligent applications, ML pipelines, LLM-powered features
-- **Mobile** — Flutter & Dart app development
-- **Web** — Full-Stack Web Development
-- **Backend** — Python, FastAPI, Flask, Firebase
+- **AI/ML & Generative AI**: intelligent applications, ML pipelines, LLM-powered features
+- **Mobile**: Flutter & Dart app development
+- **Web**: Full-Stack Web Development
+- **Backend**: Python, FastAPI, Flask, Firebase
 
 ## 🚀 Featured Projects
 
@@ -24,10 +24,10 @@ I'm an AI Engineer and AI student at the University of Haripur, building intelli
 
 ## 💼 Internships
 
-- **Machine Learning Intern** — CodeAlpha
-- **Generative AI Intern** — DecodeLabs
-- **Flutter Intern** — Internee.pk
-- **Networking Intern** — Telephone Industries of Pakistan
+- **Machine Learning Intern**: CodeAlpha
+- **Generative AI Intern**: DecodeLabs
+- **Flutter Intern**: Internee.pk
+- **Networking Intern**: Telephone Industries of Pakistan
 
 ## 📫 Connect with me
 
