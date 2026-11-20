@@ -1655,3 +1655,84 @@ html{scroll-padding-top:var(--portfolio-header-height)}
 /* Light, uniform photographic treatment, with distinct accents inside each cover. */
 #projects .project-thumb img{filter:brightness(.97) contrast(1.035) saturate(.91);}
 #projects .project-thumb{background:#15253a;}
+
+
+/* 2026-11-20: badge dimensions and positions must not stretch on small screens.
+   Previous mobile selectors set top without clearing bottom, leading to a
+   vertically stretched AI Student badge. Scope correction to hero card. */
+.home .profile-card--editorial .float-pill {
+  height: auto;
+  max-height: 46px;
+  min-height: 34px;
+  width: max-content;
+  max-width: calc(100% + 16px);
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.15;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+.home .profile-card--editorial .float-pill i { flex: 0 0 auto; }
+@media (min-width: 651px) and (max-width: 980px) {
+  .home .profile-card--editorial .float-pill.left {
+    left: -25px; right: auto; top: 76px; bottom: auto;
+  }
+  .home .profile-card--editorial .float-pill.right {
+    right: -25px; left: auto; top: auto; bottom: 76px;
+  }
+}
+@media (max-width: 650px) {
+  .home .profile-card--editorial .float-pill {
+    min-height: 34px;
+    max-height: 38px;
+    font-size: 10px;
+    padding: 8px 11px;
+  }
+  .home .profile-card--editorial .float-pill.left {
+    left: -10px; right: auto; top: 60px; bottom: auto;
+  }
+  .home .profile-card--editorial .float-pill.right {
+    right: -10px; left: auto; top: 218px; bottom: auto;
+  }
+}
+@media (max-width: 420px) {
+  .home .profile-card--editorial .float-pill.left { top: 55px; }
+  .home .profile-card--editorial .float-pill.right { top: 212px; }
+}
+@media (max-width: 350px) {
+  .home .profile-card--editorial .float-pill { font-size: 9px; padding: 7px 8px; }
+  .home .profile-card--editorial .float-pill.left { top: 51px; }
+  .home .profile-card--editorial .float-pill.right { top: 200px; }
+}
+
+/* 2026-11-20: Device-specific AI Student badge placement.
+   Desktop original alignment is restored; only phone-sized devices
+   place the pill at the lower hand in the portrait. */
+@media (min-width: 981px) {
+  .home .profile-card--editorial .float-pill.right {
+    top: auto; bottom: 88px; right: -98px; left: auto;
+  }
+}
+@media (min-width: 981px) and (max-width: 1180px) {
+  .home .profile-card--editorial .float-pill.right {
+    top: auto; bottom: 82px; right: -86px; left: auto;
+  }
+}
+@media (max-width: 650px) {
+  .home .profile-card--editorial .float-pill.right {
+    top: 272px; bottom: auto; right: -10px; left: auto;
+    width: max-content; height: auto;
+  }
+}
+@media (max-width: 420px) {
+  .home .profile-card--editorial .float-pill.right {
+    top: 270px; bottom: auto; right: -10px; left: auto;
+  }
+}
+@media (max-width: 350px) {
+  .home .profile-card--editorial .float-pill.right {
+    top: 265px; bottom: auto; right: -7px; left: auto;
+  }
+}
